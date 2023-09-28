@@ -1,0 +1,79 @@
+<!-- TRABALHO DESENVOLVIDO POR GILSON LANGA E VITÓRIA ANDREA OLIVEIRA DA SILVA  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Vagas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Cadastro de Vagas</h1>
+
+        <!--
+        <nav>
+            <ul>
+                <a href="index.html"><li>Main</li></a>
+                <a href="cadastro.html"><li>Cadastrar</li></a>
+                <a href="listarVagas.html"><li>Listar Vagas</li></a>
+                <li>Pag 3</li>
+            </ul>
+        </nav>
+        -->
+        
+    </header>
+    
+
+
+    <div id="conteiner">
+        <div id="divForm">
+            <form id="formulario" action="listarVagas.html" method="post">
+                <Label for="placa">Placa do Veículo</Label>
+                <input type="text" id="placa" name="placa" placeholder="Digite a Placa do Veículo">
+        
+                <Label for="proprietario">Nome do Proprietário</Label>
+                <input type="text" id="proprietario" name="proprietario" placeholder="Digite o Nome do Proprietário">
+        
+                <Label for="apartamento">Número do Apartamento</Label>
+                <input type="text" id="apartamento" name="apartamento" placeholder="Digite o Número do Apartamento">
+        
+                <Label for="bloco">Bloco do Apartamento</Label>
+                <input type="text" id="bloco" name="bloco" placeholder="Digite o Bloco do Apartamento">
+        
+                <Label for="modeloVeiculo">Modelo do Veículo</Label>
+                <input type="text" id="modeloVeiculo" name="modeloVeiculo" placeholder="Digite o Modelo do Veículo">
+        
+                <Label for="corVeiculo">Cor do Veículo</Label>
+                <input type="text" id="corVeiculo" name="corVeiculo" placeholder="Digite a Cor do Veículo">
+        
+                <Label for="numeroVaga">Número da Vaga</Label>
+                <input type="text" id="numeroVaga" name="numeroVaga" placeholder="Digite o Número da Vaga desejada">
+        
+                <button type="submit" value="enviar">Cadastrar</button>
+            </form>
+        </div>
+
+        <div id="listar">
+            <div id="divListarOcupadas" style="background: linear-gradient(90deg, darkgreen 0%, green 100%);">
+                <button type="button" value="vagasOcupadas" id="vagasOcupadas" onclick="listarVagasOcupadas()">Vagas Ocupadas</button>
+                <div id="listarOcupadas">Todas as Vagas Disponíveis</div>
+                <br>
+            </div>
+    
+            <div id="divListarLivres">
+                <button type="button" value="vagasLivres" id="vagasOcupadas" onclick="listarVagasLivres()">Vagas Livres</button>
+                <div id="listarLivres">Todas as Vagas Disponíveis</div>
+               <script src="cadastro.js"></script>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+   
+</body>
+</html>

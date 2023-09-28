@@ -1,0 +1,104 @@
+/* TRABALHO DESENVOLVIDO POR GILSON LANGA E VITÓRIA ANDREA OLIVEIRA DA SILVA */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    background: linear-gradient(90deg, gray 0%, lightgrey 100%);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px gray;
+}
+
+input[type=text], select {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+header {
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    padding: 14px 20px;
+    margin: 8px 0;
+}
+
+
+
+#conteiner {
+    display: inline-flex;
+}
+
+#listar {
+    display: inline-flex;
+    margin: 0 50px;
+    padding: 5px;
+    
+}
+
+#divListarLivres {
+
+    margin: 0 20px;
+    padding: 5px 5px;
+    color: white;
+
+    background: linear-gradient(90deg, darkgreen 0%, green 100%);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px gray;
+
+    text-align: center;
+
+}
+
+#divListarOcupadas {
+ 
+    margin: 0 20px;
+    padding: 5px 5px;
+    color: white;
+
+    background: linear-gradient(90deg, darkred 0%, red 100%);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px gray;
+
+    text-align: center;
+}
+
+button {
+    margin: 5px 5px;
+    height: 25px;
+    width: 150px;
+    align-content: center;
+
+}
+
+table, td {
+  border: 1px solid #333;
+}
+
+thead,
+tfoot {
+  background-color: #333;
+  color: #fff;
+}
