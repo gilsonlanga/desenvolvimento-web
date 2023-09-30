@@ -5,7 +5,6 @@ const listarOcupadas = document.getElementById("listarOcupadas");
 const listarLivres = document.getElementById("listarLivres");
 
 const totalVagas = 5;
-const diasArmazenados = 30
 
 
 
@@ -37,10 +36,9 @@ form.addEventListener('submit', (event) => {
                 if (vagas[i].vagaOcupada == false) {
                     vagas[i] = json;
                     vagas[i].vagaOcupada = true;
-                    localStorage.setItem(`vaga${i+1}`, JSON.stringify(vagas[i]), diasArmazenados);
                     alert(`Vaga ${i+1} Cadastrada com Sucesso`);
                 } else {
-                    alert("VAGA "+ (i+1) + "INDISPONÍVEL!!!");
+                    alert("VAGA "+ (i+1) + " INDISPONÍVEL!!!");
                 }
             }
         }
@@ -64,10 +62,10 @@ form.addEventListener('submit', (event) => {
 
 function listarVagasOcupadas() {
     let vagasOcupadas = "";
-    let tempOcupada = document.getElementById("tabelaOcupada");
+
     for (let i=0; i<totalVagas; i++) {
         if(vagas[i].vagaOcupada == true) {
- 
+
             vagasOcupadas = vagasOcupadas + "<br>" + "Vaga " + (i+1) + " - Ocupada" + "<br>" + 
             "Placa do Veículo: " + vagas[i].placa + "<br>" +
             "Proprietário: " + vagas[i].proprietario + "<br>" +
@@ -76,6 +74,7 @@ function listarVagasOcupadas() {
             "Modelo do Veículo: " + vagas[i].modeloVeiculo + "<br>" +
             "Cor do Veículo: " + vagas[i].corVeiculo + "<br>" +
             "Numero da Vaga: " + vagas[i].numeroVaga + "<br>"; 
+
 
         }
     }
